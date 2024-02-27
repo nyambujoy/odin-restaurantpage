@@ -5,6 +5,7 @@
 import { home } from './home'
 import { aboutUs } from './about';
 import "./nav.css"
+import "./about.css"
 import bg from './imgs/bg.png';
 
 
@@ -13,11 +14,6 @@ import bg from './imgs/bg.png';
 
 
 function createButtons() {
-
-    // Add the image to our existing div.
-    // const logo = document.getElementById("logo")
-    // const myIcon = new Image();
-    // myIcon.src = bg;
 
     const imageElement = document.createElement('img');
     imageElement.src = bg; // Use the imported image as the source for the image element
