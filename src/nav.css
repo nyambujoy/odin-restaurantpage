@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --title: #505F6B;
+    --orange: #A56034;
+    --irish-coffe: #552C1F;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url('./imgs/bg.png');
+    background-color: #FFC72C;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #505F6B;
+
+}
+
+.navBtn {
+    width: 200px;
+    height: 40px;
+    background-color: var(--title);
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    transition: border-bottom 0.3s ease;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+
+}
+
+.navBtn:hover {
+    border-bottom: 5px solid var(--orange);
+}
+
+#logo {}
+
+.logoImage {
+    height: 70px;
+    width: 70px;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+}
+
+.name {
+    font-family: "Permanent Marker", cursive;
+    font-size: 7rem;
+    color: #fff;
+    background-color: #552C1F;
+    border-radius: 1px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.para {
+    font-family: "Permanent Marker", cursive;
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    font-style: oblique;
+    background-color: white;
+    color: black;
+    margin: 30px;
+    padding: 20px;
+    /*  */
+
+}
+
+/* about us */
