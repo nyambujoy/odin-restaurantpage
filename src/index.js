@@ -9,6 +9,8 @@ import "./about.css"
 import bg from './imgs/bg.png';
 
 
+
+
 // home.title()
 // console.log(home)
 

@@ -1,4 +1,11 @@
+import rest from './imgs/rest.jpg'
+
 function aboutUs() {
+    const newElement = document.createElement('img');
+    newElement.src = rest
+    document.body.appendChild(newElement);
+    newElement.classList.add("newImage")
+
     let aboutH1 = document.createElement("h1")
     aboutH1.innerHTML = "About us"
     aboutH1.classList.add("aboutH")
@@ -11,10 +18,7 @@ function aboutUs() {
     divContainer.textContent = ""
     divContainer.append(aboutH1, paragraph)
 
-    const newElement = document.createElement('img');
-    newElement.src = "./imgs/red.png"
-    document.body.appendChild(newElement);
-    newElement.classList.add("newImage")
+
 }
 
 export { aboutUs }
