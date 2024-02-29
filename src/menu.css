@@ -1,0 +1,19 @@
+.divOfMenuOne {
+    background-color: white;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.divOfMenuOne>h2 {
+    color: #A56034;
+}
+
+.divOfMenuOne>h3 {
+    font-style: italic;
+}
+
+.bigContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

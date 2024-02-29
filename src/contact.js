@@ -1,4 +1,6 @@
-import '@fortawesome/fontawesome-free/css/all.css';
+
+import twitterIcon from './imgs/twitter.svg'
+import facebook from './imgs/facebook.svg'
 
 function contactUs() {
     const leftDiv = document.createElement("div")
@@ -16,19 +18,17 @@ function contactUs() {
     box.innerHTML = "P.O BOX 23458 <br>  Feel free to contact us "
     box.classList.add("box")
 
-    const twitter = document.createElement("a");
-    const twitterIcon = document.createElement("i");
-    twitterIcon.classList.add("fa", "fa-twitter");
-    twitter.appendChild(twitterIcon);
-    twitter.classList.add("twit");
+    const imgTwitt = document.createElement('img');
+    imgTwitt.src = twitterIcon;
+    document.body.appendChild(imgTwitt);
 
-    const facebook = document.createElement("a");
-    const facebookIcon = document.createElement("i");
-    facebookIcon.classList.add("fa", "fa-facebook-square");
-    facebook.appendChild(facebookIcon);
-    facebook.classList.add("face");
+    const imgfacebook = document.createElement('img');
+    imgfacebook.src = facebook;
+    document.body.appendChild(imgfacebook);
 
-    leftDiv.append(label, tele, box, twitter, facebook);
+
+
+    leftDiv.append(label, tele, box, imgTwitt);
 
     const rightDiv = document.createElement("div")
     rightDiv.classList.add("rightDiv")

@@ -1,21 +1,15 @@
-// alert("hello world");
 
-// tab switching logic needs to be here 
-// we will import all the other tabs here for sure
 import { home } from './home'
 import { aboutUs } from './about';
 import { contactUs } from './contact'
+import { menu } from './menu'
 import "./nav.css"
 import "./about.css"
 import "./contact.css"
+import "./menu.css"
 import bg from './imgs/bg.png';
 
 
-
-
-
-// home.title()
-// console.log(home)
 
 
 function createButtons() {
@@ -39,6 +33,7 @@ function createButtons() {
     const menuBtn = document.createElement("button")
     menuBtn.innerHTML = "Menu"
     menuBtn.classList.add("navBtn")
+    menuBtn.id = "menuBtn"
 
     const contactBtn = document.createElement("button")
     contactBtn.innerHTML = "CONTACT"
@@ -64,8 +59,14 @@ aboutBtn.addEventListener("click", () => {
     aboutUs()
 })
 
+let menuBtn = document.querySelector("#menuBtn")
+menuBtn.addEventListener("click", () => {
+    console.log("hello")
+    menu()
+})
+
 let contactBtn = document.querySelector("#contactBtn")
 contactBtn.addEventListener("click", () => {
-    console.log("hello")
+
     contactUs()
 })
