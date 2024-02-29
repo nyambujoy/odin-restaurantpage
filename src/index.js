@@ -4,9 +4,12 @@
 // we will import all the other tabs here for sure
 import { home } from './home'
 import { aboutUs } from './about';
+import { contactUs } from './contact'
 import "./nav.css"
 import "./about.css"
+import "./contact.css"
 import bg from './imgs/bg.png';
+
 
 
 
@@ -40,6 +43,7 @@ function createButtons() {
     const contactBtn = document.createElement("button")
     contactBtn.innerHTML = "CONTACT"
     contactBtn.classList.add("navBtn")
+    contactBtn.id = "contactBtn"
 
     let navbar = document.querySelector(".navbar")
     navbar.append(homeBtn, aboutBtn, menuBtn, contactBtn)
@@ -56,6 +60,12 @@ homeBtn.addEventListener("click", () => {
 })
 let aboutBtn = document.querySelector("#aboutBtn")
 aboutBtn.addEventListener("click", () => {
-    console.log("hello")
+
     aboutUs()
+})
+
+let contactBtn = document.querySelector("#contactBtn")
+contactBtn.addEventListener("click", () => {
+    console.log("hello")
+    contactUs()
 })

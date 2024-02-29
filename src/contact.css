@@ -1,0 +1,23 @@
+#content {
+    display: flex;
+    justify-content: center;
+
+}
+
+.leftDiv {
+    background-color: white;
+    padding: 30px;
+    font-style: oblique;
+}
+
+.rightDiv {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    margin: 40px;
+    padding: 50px;
+    font-size: 1.5rem;
+    border: none;
+    color: grey;
+
+}
